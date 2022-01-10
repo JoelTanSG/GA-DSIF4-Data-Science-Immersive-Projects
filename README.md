@@ -1,4 +1,4 @@
-![](https://github.com/JoelTanSG/GA-Project-1-Standardized-Test-Analysis/blob/main/Readme_banner.png)
+![](Readme_banner.png)
 
 # Table of Contents
 * [Background](#Background)
