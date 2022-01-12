@@ -72,7 +72,7 @@ def percent_string_to_float(string):
 
 # Exploratory Data Analysis
 
-In my exploration of the dataset, I looked at the **participation rates** across all three years and these were the general observations:
+#### In my exploration of the dataset, I looked at the participation rates across all three years and these were the general observations:
 
 1. Delaware, Connecticut and Michigan has 100% participation rate across the years
 2. Full participation rate has increased over time. From just 4 states in 2017 to 5 in 2018 and 8 in 2019
@@ -81,7 +81,7 @@ In my exploration of the dataset, I looked at the **participation rates** across
 5. North Dakota has been consistently the state with the lowest participation at only 20%
 6. While the participation rates of the top 10 states trend upwards, the bottom states has no significant changes remaining between 20% - 40%
 
-I then took a look at the total mean SAT scores across the states and came up with these observations:
+#### I then took a look at the total mean SAT scores across the states and came up with these observations:
 
 1. Minnesota and Wisconsin had the top 2 total composite score for all three years. Their results for 2019 is only different by a single point.
 2. The average total scores are consistently range bound between 1298 and 1260 inclusive
@@ -91,15 +91,15 @@ I then took a look at the total mean SAT scores across the states and came up wi
 5. 2019 was the worst performing year for the bottom 5 states
 6. Geographically there is no observable patterns unlike the top 5
 
-Finally I looked at the states with higher then the national average scores for both EBRW and math and came up with these findings:
+#### Finally I looked at the states with higher then the national average scores for both EBRW and math and came up with these findings:
 
-For the states that are above the national math average score for 2017 to 2019
+**For the states that are above the national math average score from 2017 to 2019**
 
 1. 2017 had 25 states above the national average and this has since dropped to 18 in 2018 and 19 in 2019.
 2. It is interesting to note that states listed as the least educated states: Alabama, Arkansas, Louisiana, and Mississippi are above the national average. While states that are listed as the most educated are not in the any of the list: Maryland, Connecticut, with Vermont and Colorada making it above the national average only in 2017.[source](https://worldpopulationreview.com/state-rankings/least-educated-states)
 3. It is also noteworthy that states with higher participation rate do not appear in any of the above years. Does this takeaway weight from the theory that the environment plays a major factor in a person's ability to get a good education? Or are there outliers in the data that is pulling down the overall average score of these states?
 
-For EBRW scores that are above the national average findings:
+**For EBRW scores that are above the national average findings:**
 
 1. It can be observed that states with above national average score for EBRW continue to do so across all three years with the exception of afew.
 2. Compared to the math national average results, the total number of states above the national average for EBRW is just one more then math.
