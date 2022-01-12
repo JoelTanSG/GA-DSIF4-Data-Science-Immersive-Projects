@@ -47,29 +47,28 @@ total_avg_score_2019|int64|2019| The sum of both the Math score and the EBRW sco
 # Functions Created
 
 1. Calculating the Mean
-
-'''Python
+```Python
 def cal_mean(lst):
   result = 0
   for i in lst:
       result+=i
   return result/len(lst)
-'''
-2. Calculating Standard Deviation using the above mean function
+```
 
-'''Python
+2. Calculating Standard Deviation using the above mean function
+```Python
 def standard_deviation(lst):
     mu = cal_mean(lst)
     n = len(lst)
     var = sum((x-mu)**2 for x in lst)/n
     return (var)**0.5
-'''
-3. Converting string format of a percentage value to floats (eg.'30%' to 0.3)
+```
 
-'''Python
+3. Converting string format of a percentage value to floats (eg.'30%' to 0.3)
+```Python
 def percent_string_to_float(string):
   return (float(string.replace('%',''))/100)
-'''
+```
 
 # Exploratory Data Analysis
 
