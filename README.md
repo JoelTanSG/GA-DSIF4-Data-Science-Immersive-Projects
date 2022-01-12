@@ -14,7 +14,7 @@ This is the first project I am doing at General Assembly's Data Science Immersiv
 
 I'll be taking a look at the aggregate SAT scores and participation rates in the United States between 2018 - 2019. Seek to identify trends in the data and combine data analysis with outside research to address a problem statement.
 
-The problem statement I decided to go with was:
+The **problem statement** I decided to go with was:
 
 More and more schools in the USA are changing their math curriculum, lowering the standards required to make it easier for those struggling with math. Is the trend of students taking the SAT test showing a worsening performance towards math and a greater lean towards reading and writing? This short analysis would take a look at the math score, across the states and see if we can find any noticeable trends or patterns.
 
@@ -28,7 +28,7 @@ The datasets I used were from [PrepScholar](https://www.prepscholar.com/sat/s/) 
 - 2018 SAT Scores by State [Download](./data/sat_2018.csv) ([source](https://blog.collegevine.com/here-are-the-average-sat-scores-by-state/))
 - 2019 SAT Scores by State [Download](./data/sat_2019.csv) ([source](https://blog.prepscholar.com/average-sat-scores-by-state-most-recent))
 
-The final
+The description of the merged and cleaned up dataset used:
 |Feature|Type|Dataset(year)|Description|
 |---|---|---|---|
 participation_rate_2017|float64|2017| The participation rate of students for the different states in 2017
@@ -47,22 +47,29 @@ total_avg_score_2019|int64|2019| The sum of both the Math score and the EBRW sco
 # Functions Created
 
 1. Calculating the Mean
-  def cal_mean(lst):
-    result = 0
-    for i in lst:
-        result+=i
-    return result/len(lst)
 
+'''Python
+def cal_mean(lst):
+  result = 0
+  for i in lst:
+      result+=i
+  return result/len(lst)
+'''
 2. Calculating Standard Deviation using the above mean function
-  def standard_deviation(lst):
-      mu = cal_mean(lst)
-      n = len(lst)
-      var = sum((x-mu)**2 for x in lst)/n
-      return (var)**0.5
 
+'''Python
+def standard_deviation(lst):
+    mu = cal_mean(lst)
+    n = len(lst)
+    var = sum((x-mu)**2 for x in lst)/n
+    return (var)**0.5
+'''
 3. Converting string format of a percentage value to floats (eg.'30%' to 0.3)
-  def percent_string_to_float(string):
-    return (float(string.replace('%',''))/100)
+
+'''Python
+def percent_string_to_float(string):
+  return (float(string.replace('%',''))/100)
+'''
 
 # Exploratory Data Analysis
 
