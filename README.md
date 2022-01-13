@@ -128,9 +128,11 @@ Author:
 
 [JoelTanSG](https://github.com/JoelTanSG)
 
-Instructors from GA:
+**Instructors from GA**
 
-Lead Instructor:[Divya Venkatraman](https://github.com/Divya-sg)
+Lead Instructor:
+
+[Divya Venkatraman](https://github.com/Divya-sg)
 
 Asst. Instructors:
 
