@@ -125,13 +125,17 @@ There are a few key takeaways I took away from my analysis.
 # Credits
 
 Author:
+
 [JoelTanSG](https://github.com/JoelTanSG)
 
 Instructors from GA:
+
 Lead Instructor:[Divya Venkatraman](https://github.com/Divya-sg)
 
 Asst. Instructors:
+
 [Ben Lim](https://github.com/benlyj)
+
 [Shao Quan](https://github.com/shaoquan93)
 
 # License
