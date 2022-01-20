@@ -7,11 +7,7 @@ This repository contains all the projects done for General Assembly's [Data Scie
 
 **Author**: [JoelTanSG](https://github.com/JoelTanSG)
 
-**Instructors from GA**
-
-Lead Instructor:
-
-[Divya Venkatraman](https://github.com/Divya-sg)
+Lead Instructor: [Divya Venkatraman](https://github.com/Divya-sg)
 
 Asst. Instructors:
 
