@@ -122,24 +122,6 @@ There are a few key takeaways I took away from my analysis.
 3. There are more factors at play then meets the eye. For example the changing of the math section in 2018 and more recently the dropping of the EBRW essay section in 2021 [source](https://blog.collegeboard.org/January-2021-sat-subject-test-and-essay-faq)
 4. An interesting phenomenon that could be looked at would be why are the top scoring states in the mid-north of the country. And what are they doing differently that is helping the students in those states do well overall.
 
-# Credits
-
-Author:
-
-[JoelTanSG](https://github.com/JoelTanSG)
-
-**Instructors from GA**
-
-Lead Instructor:
-
-[Divya Venkatraman](https://github.com/Divya-sg)
-
-Asst. Instructors:
-
-[Ben Lim](https://github.com/benlyj)
-
-[Shao Quan](https://github.com/shaoquan93)
-
 # License
 
 [MIT](https://github.com/JoelTanSG/GA-Project-1-Standardized-Test-Analysis/blob/main/LICENSE)

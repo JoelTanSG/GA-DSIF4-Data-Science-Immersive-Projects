@@ -4,3 +4,17 @@ This repository contains all the projects done for General Assembly's [Data Scie
 
 1. [Project 1: SAT Test Analysis and Visualisation](./Project_1)
 2. [Project 2: Regression Modeling using Ames Housing Data](./Project_2)
+
+**Author**: [JoelTanSG](https://github.com/JoelTanSG)
+
+**Instructors from GA**
+
+Lead Instructor:
+
+[Divya Venkatraman](https://github.com/Divya-sg)
+
+Asst. Instructors:
+
+[Ben Lim](https://github.com/benlyj)
+
+[Shao Quan](https://github.com/shaoquan93)
