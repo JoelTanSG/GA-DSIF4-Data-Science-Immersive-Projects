@@ -49,27 +49,29 @@ Street| Info captured under Alley|
 Exterior 1st and 2nd| Info capture in exterior cond and quality|
 
 2. Feature Engineering (Total:13)
+
 |Variable|attributes|
 |---|---|
-Garage Cond| TA, Gd, Ex to a the rest to b|
-Garage Type| Attchd, Bulitin, 2Types to a the rest to b|
-Fireplace Qu| Ex as a, Gd, Fa and Gd as b, the rest as c|
-Functional| Sev, Sal, Maj2 as b the rest as a|
-Electrical| SBrkr as a the rest as b|
-Heating QC| Ex as a, Ta,Gd, Fa as b, Po as c|
-Bsmt Cond| Ex, Ta, Gd as a, the rest as b|
-Bsmt Qual|Ex as 2, Gd a, the rest as b|
-Foundation| PConc, Wood, and the rest as others|
-Exter Cond| Ex as a, Po as c and the rest as b|
-Exter Qual| Ex as a, Gd, as b, the rest as c|
-Roof Matl| WdShngl and WdShake as wood and the rest as others|
-Condition 2| PosA and PosN as a and the rest as b|
+|Garage Cond| TA, Gd, Ex to a the rest to b|
+|Garage Type| Attchd, Bulitin, 2Types to a the rest to b|
+|Fireplace Qu| Ex as a, Gd, Fa and Gd as b, the rest as c|
+|Functional| Sev, Sal, Maj2 as b the rest as a|
+|Electrical| SBrkr as a the rest as b|
+|Heating QC| Ex as a, Ta,Gd, Fa as b, Po as c|
+|Bsmt Cond| Ex, Ta, Gd as a, the rest as b|
+|Bsmt Qual|Ex as 2, Gd a, the rest as b|
+|Foundation| PConc, Wood, and the rest as others|
+|Exter Cond| Ex as a, Po as c and the rest as b|
+|Exter Qual| Ex as a, Gd, as b, the rest as c|
+|Roof Matl| WdShngl and WdShake as wood and the rest as others|
+|Condition 2| PosA and PosN as a and the rest as b|
 
 ### For Numerical Data (And some categorical data then came under here due to dtypes)
 1. Variables to Drop
+
 |Variable| Reason for dropping|
 |---|---|
-Id| make this as the Index
+|Id| make this as the Index|
 PID|This is to identify the specific property and it is not of use here
 Lot Frontage|no clear pattern discernable
 Lot Area| the same as Lot Frontage
@@ -97,24 +99,23 @@ Garage Cars| Captured in Garage Area
 * Fireplace: 0 as 'NA', 1-2 as '1-2' and 3 or more as '>2'
 
 3. Variables that are numeric but falls under categorical (To One Hot Encode):
+
 |Variable|Comments|
 |---|---|
 |TotRms AbvGrd| Rooms with above avg grade|
 
-4. Some General comments
-
-Interesting that once rooms above average grade hits 10 the salesprice starts to taper off and actually drop when it hits 12.Same goes for garage cars, where the curve drops after 3 cars.
-
-This seems to indicate, that unlike Singapore a larger property might not command a higher selling price in Ames. This could be reflection of the space constraint we have here.
+4. Some General comments: Interesting that once rooms above average grade hits 10 the salesprice starts to taper off and actually drop when it hits 12.Same goes for garage cars, where the curve drops after 3 cars.This seems to indicate, that unlike Singapore a larger property might not command a higher selling price in Ames. This could be reflection of the space constraint we have here.
 
 _Note the decision to keep, drop or merge the variables are based on a mix of logic, looking at the boxplot and researching online/ descriptive abstract of the different terms. Also not documented are the many smaller plots and comparison made between variables but cleaned up to make the code more concise for readability._
 
 ## EDA
 I generated a pairplot to take a look at other possible relationships
 ![](./assets/images/pairplot.png)
+
 Interesting that garage area and total basement square feet is in the top 5 correlation to sales price of a property in the US.
 
 I also generated a heatmap to look at the possible correlation between the variables:
+
 ![](./assets/images/heatmap.png)
 
 ## Model_Preprocessing
