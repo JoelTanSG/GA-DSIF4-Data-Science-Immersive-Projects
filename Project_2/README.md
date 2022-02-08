@@ -40,7 +40,8 @@ I'll be training the data using 4 different types of models to try and predict t
 
 Belows are the results:
 
-![](./assets/images/![](./assets/images/PredictedvsActual.png)
+![](./assets/images/!(./assets/images/PredictedvsActual.png)
+
 ![](./assets/images/Model_Results_Table)
 ![](./assets/images/Residual.png)![](./assets/images/Variance.png)
 ![](./assets/images/top10_bot10.png)
