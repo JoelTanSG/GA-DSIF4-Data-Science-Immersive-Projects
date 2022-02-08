@@ -20,11 +20,35 @@ Work in progress :man_mechanic:
 ## Data_Wrangling
 ## EDA
 ## Model_Preprocessing
+The steps taken here, are in summary:
+
+1. One hot encode all Nominal Variables using pd.get_dummies
+2. Separate out the Ordinal variables to maintain the attributes as is
+3. Use polynomial features on the numerical columns to create interaction and reduce bias.
+4. Standardise the numerical columns with a mean of 0 and std dev of 1.
+5. Finally split the dataset into training and testing set to fit into the models later.
+
+After processing my dataset to fit into the model had 2049 rows and 164 columns
+
 ## Machine_Learning
+I'll be training the data using 4 different types of models to try and predict the sale price of a property:
+
+* Linear Regression - This would be considered my baseline model, using a regression line to try and predict prices
+* Ridge - As the data suffer from multicollinearity, I expect the ridge model to work better
+* Lasso - Using Lasso which tend to make coefficients to absolute zero I hope to get a model with better feature selection.
+* ElasticNet - Finally with Elastic Net, which is a combination of both L1 regularisation and L2 regularisation I want to see if both shrinking the coefficients as well as eliminating some of the insignificant ones would result in a more accurate model.
+
+Belows are the results:
+
+![](./assets/images/![](./assets/images/PredictedvsActual.png)
+![](./assets/images/Model_Results_Table)
+![](./assets/images/Residual.png)![](./assets/images/Variance.png)
+![](./assets/images/top10_bot10.png)
+
 ## Kaggle_Submission
-![](./assets/images/Kaggle_Results_Table.png)
+
 ## Conclusion
-Plotting the qq-plot (Quantile-Quantile Plot) we can see that all 4 models behaved very similiarly with the major difference being how far out the outliers were from the actual sales price of the property. It can be say to say that all 4 models would be able to predict with high accuracy the price of the property in Ames if the price range is between 100k to 400k.
+Plotting the qq-plot (Quantile-Quantile Plot) we can see that all 4 models behaved very similarly with the major difference being how far out the outliers were from the actual sales price of the property. It can be say to say that all 4 models would be able to predict with high accuracy the price of the property in Ames if the price range is between 100k to 400k.
 
 With the P value between 0.95 and 0.98 we can accept the null hypothesis that there is no difference in the predictions versus the actual prices except for chance.
 
