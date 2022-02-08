@@ -43,11 +43,12 @@ Belows are the results:
 
 ![](./assets/images/PredictedvsActual.png)
 
-![](./assets/images/Model_Results_Table)
+![](./assets/images/Model_Results_Table.png)
 ![](./assets/images/Residual.png)![](./assets/images/Variance.png)
 ![](./assets/images/top10_bot10.png)
 
 ## Kaggle_Submission
+![](./assets/images/Kaggle_Result_table.png)
 
 ## Conclusion
 Plotting the qq-plot (Quantile-Quantile Plot) we can see that all 4 models behaved very similarly with the major difference being how far out the outliers were from the actual sales price of the property. It can be say to say that all 4 models would be able to predict with high accuracy the price of the property in Ames if the price range is between 100k to 400k.
