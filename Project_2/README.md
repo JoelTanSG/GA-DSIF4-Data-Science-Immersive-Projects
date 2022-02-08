@@ -32,6 +32,7 @@ The description of the dataset can be found [here](http://jse.amstat.org/v19n3/d
 ## Data_Wrangling
 ### For Catergorical Data
 1. Variables to drop: (Total:14)
+
 |Variables| Reason for dropping|
 |---|---|
 Fence|not much difference in price range|
@@ -67,7 +68,7 @@ Exterior 1st and 2nd| Info capture in exterior cond and quality|
 |Condition 2| PosA and PosN as a and the rest as b|
 
 ### For Numerical Data (And some categorical data then came under here due to dtypes)
-1. Variables to Drop
+1. Variables to Drop (Total:16)
 
 |Variable| Reason for dropping|
 |---|---|
@@ -88,7 +89,7 @@ Misc Val| Established earlier with Misc Feature not contributing to the sales pr
 Mo Sold| This is not going to help our consumer decide on how to price a house
 Garage Cars| Captured in Garage Area
 
-2. To Feature Engineer
+2. To Feature Engineer (Total:8)
 * MS SubClass: 120 and 60 as 'a', 20 and 75 as 'b' the rest as 'c'
 * Combine: Open Porch SF, Enclosed Porch, 3Ssn Porch and Screen Porch into one catergorical variable call Porch
 * Combine: Year Sold and Year Built to get Age of the house when sold
