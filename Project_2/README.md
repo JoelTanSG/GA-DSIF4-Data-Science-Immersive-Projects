@@ -19,6 +19,7 @@ Work in progress :man_mechanic:
 ## Dataset
 ## Data_Wrangling
 ## EDA
+![](./assets/images/heatmap.png)![](./assets/images/pairplot.png)
 ## Model_Preprocessing
 The steps taken here, are in summary:
 
@@ -40,7 +41,7 @@ I'll be training the data using 4 different types of models to try and predict t
 
 Belows are the results:
 
-![](./assets/images/!(./assets/images/PredictedvsActual.png)
+![](./assets/images/PredictedvsActual.png)
 
 ![](./assets/images/Model_Results_Table)
 ![](./assets/images/Residual.png)![](./assets/images/Variance.png)
