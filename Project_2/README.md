@@ -13,16 +13,16 @@
 9. [Recommendations](#Recommendations)
 
 ## Background
-Purpose of this project is to create regression models based on the Ames Housing Dataset. This model will be used to predict the price of a house on sales.
+The purpose of this project is to create regression models based on the Ames Housing Dataset. The best model will be then used to predict/ estimate the price of a house on sales.
 
 The Ames Housing Dataset is an exceptionally detailed and robust dataset with over 70 columns of different features relating to houses.
 
 The results of testing the model will be submitted to [Kaggle](https://www.kaggle.com/c/dsi-us-11-project-2-regression-challenge)
 
-The rough focus would be to create a program for a real estate agents to better estimate the selling price of a house they would like to market
+The direction or real world use would be to create a program for real estate agents to better estimate the selling price of a house they would like to market or for a home buyer to be able to get a rough estimate of the house they're considering in Ames.
 
 First I'll be prepping the dataset by doing feature engineering, dropping some variables and doing general cleaning.
-I'll then do some simple exploratory data analysis on the cleaned data and finally fit the data into different regression models to try and predict as close as possible the actual sale price of past tranacted properties.
+I'll then do some simple exploratory data analysis on the cleaned data and finally fit the data into different regression models to try and predict as close as possible the actual sale price of past transacted properties.
 ## Dataset
 The Ames Housing Dataset for this project is split into two. One would be used to train the model and the other to test how well the model does.
 
@@ -30,6 +30,10 @@ They can be found [here](https://www.kaggle.com/c/dsi-us-11-project-2-regression
 
 The description of the dataset can be found [here](http://jse.amstat.org/v19n3/decock/DataDocumentation.txt)
 ## Data_Wrangling
+The variables can be split between two types: Categorical (objects) and Numerical (int or float).
+I'll be using boxplots for categorical data and scatter plots for numerical data to filter out variables that do not clearly define the salesprice of a home or are highly correlated to each other.On top of that, depending on the context I'll do some feature engineering on some variables to merge or combine the attributes.
+
+In this section, the data description document given together with the dataset is of invaluable assistance.
 ### For Catergorical Data
 1. Variables to drop: (Total:14)
 
@@ -173,3 +177,5 @@ For client or real estate agent looking to use the model to estimate sale price:
 1. Less is more, too many measurements of same information would cause the predictions to go way off for unseen data. example having the count of the number cars able to fit into the garage and the total garage space is not only redundant but also hurts the accuracy of the models. (Although that information could be used for marketing purposes)
 2. Certain data could could be combined together. Example the type of porch rather then they being tracked separately.
 3. The ability to record the 'right' attributes into the model is key to a better price estimate.
+
+*_Do note that the presentation deck attached is meant for group class work purposes and the material presented is a joined effort from my classmates: [Jia Sheng]('https://github.com/Jiasheng30/General-Assembly-Projects/tree/master/project_2') and [Ivan Cho]('https://github.com/1vancwx/Project/tree/main/project_2')_*
