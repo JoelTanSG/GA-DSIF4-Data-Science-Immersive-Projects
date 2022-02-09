@@ -178,4 +178,6 @@ For client or real estate agent looking to use the model to estimate sale price:
 2. Certain data could could be combined together. Example the type of porch rather then they being tracked separately.
 3. The ability to record the 'right' attributes into the model is key to a better price estimate.
 
-*_Do note that the presentation deck attached is meant for group class work purposes and the material presented is a joined effort from my classmates: [Jia Sheng](https://github.com/Jiasheng30/General-Assembly-Projects/tree/master/project_2) and [Ivan Cho](https://github.com/1vancwx/Project/tree/main/project_2)_*
+---
+
+**__Do note that the presentation deck attached is meant for group class work purposes and the material presented is a joined effort from my classmates: [Jia Sheng](https://github.com/Jiasheng30/General-Assembly-Projects/tree/master/project_2) and [Ivan Cho](https://github.com/1vancwx/Project/tree/main/project_2)__**
