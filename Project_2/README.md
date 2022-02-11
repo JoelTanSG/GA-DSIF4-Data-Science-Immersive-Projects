@@ -78,9 +78,9 @@ Exterior 1st and 2nd| Info capture in exterior cond and quality|
 |---|---|
 |Id| make this as the Index|
 PID|This is to identify the specific property and it is not of use here
-Lot Frontage|no clear pattern discernable
+Lot Frontage|no clear pattern discernible
 Lot Area| the same as Lot Frontage
-Bsmt Unf SF| No clear pattern and it is not logical that the size of an unfinish basement would affect the sales price
+Bsmt Unf SF| No clear pattern and it is not logical that the size of an unfinished basement would affect the sales price
 Low Qual Fin SF| No clear pattern that can be established
 Bsmt Half Bath| No clear pattern that can be established
 Half Bath| No clear pattern that can be established
@@ -180,4 +180,4 @@ For client or real estate agent looking to use the model to estimate sale price:
 
 ---
 
-**__Do note that the presentation deck attached is meant for group class work purposes and the material presented is a joined effort from my classmates: [Jia Sheng](https://github.com/Jiasheng30/General-Assembly-Projects/tree/master/project_2) and [Ivan Cho](https://github.com/1vancwx/Project/tree/main/project_2)__**
+**__Do note that the presentation deck attached is meant for group class work purposes and the materials presented is based on my classmate [Jia Sheng](https://github.com/Jiasheng30/General-Assembly-Projects/tree/master/project_2)'s project and a joined effort from my classmate [Ivan Cho](https://github.com/1vancwx/Project/tree/main/project_2) too.__**
