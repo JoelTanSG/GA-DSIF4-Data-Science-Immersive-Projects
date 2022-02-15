@@ -7,6 +7,11 @@ This repository contains all the projects done for General Assembly's [Data Scie
 3. [Project 3: Web APIs & NLP (A Reddit Project)](./Project_3)
 
 **Author**: [JoelTanSG](https://github.com/JoelTanSG)
+<p>
+  <a href="https://www.linkedin.com/in/joeltansy" title="badge authenticity">
+    <img src="./LinkedIn_button.png" alt="Homepage" />
+  </a>
+</p>
 \social[linkedin]{https://www.linkedin.com/in/joeltansy}
 
 Lead Instructor: [Divya Venkatraman](https://github.com/Divya-sg)
