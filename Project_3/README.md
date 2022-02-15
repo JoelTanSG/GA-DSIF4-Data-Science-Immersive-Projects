@@ -1,6 +1,7 @@
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 3: Web APIs & NLP
 ![](./assets/images/readme_banner.png)
+[original image](https://preview.redd.it/ylzbphhjubh31.jpg?width=2400&format=pjpg&auto=webp&s=cfb70bd92d6ad2f0a954ae619ebf648b8d6461ac)
 # :construction: Work in progress :construction:
 
 ### Description
