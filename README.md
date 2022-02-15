@@ -15,4 +15,4 @@ Asst. Instructors:
 
 [Shao Quan](https://github.com/shaoquan93)
 
-[MIT](https://github.com/JoelTanSG/GA-DSIF4-Data-Science-Immersive-Projects/blob/main/LICENSE)
+License: [MIT](https://github.com/JoelTanSG/GA-DSIF4-Data-Science-Immersive-Projects/blob/main/LICENSE)
