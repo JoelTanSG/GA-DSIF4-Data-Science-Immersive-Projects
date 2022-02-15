@@ -12,7 +12,9 @@ This repository contains all the projects done for General Assembly's [Data Scie
     <img src="./LinkedIn_button.png" alt="Homepage" />
   </a>
 </p>
----
+
+***
+
 Lead Instructor: [Divya Venkatraman](https://github.com/Divya-sg)
 
 Asst. Instructors:
