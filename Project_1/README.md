@@ -6,7 +6,7 @@
 * [Exploratory Data Analysis](#exploratory-data-analysis)
 * [Data Visualization](#Data-Visualization)
 * [Conclusion](#Conclusion)
-* [License](#License)
+
 
 # Background
 
@@ -122,6 +122,4 @@ There are a few key takeaways I took away from my analysis.
 3. There are more factors at play then meets the eye. For example the changing of the math section in 2018 and more recently the dropping of the EBRW essay section in 2021 [source](https://blog.collegeboard.org/January-2021-sat-subject-test-and-essay-faq)
 4. An interesting phenomenon that could be looked at would be why are the top scoring states in the mid-north of the country. And what are they doing differently that is helping the students in those states do well overall.
 
-# License
-
-[MIT](https://github.com/JoelTanSG/GA-Project-1-Standardized-Test-Analysis/blob/main/LICENSE)
+**__Do note that the presentation deck attached is meant for group class work purposes and the materials presented is based on my classmate [Andre](https://github.com/andretch/Andre_Projects/tree/master/project_1)'s project and a joined effort from my classmate [Mubin](https://github.com/mubin20/my_projects/tree/master/project_1) too.__**
