@@ -16,12 +16,21 @@
    "source": [
     "## Problem Statement\n",
     "\n",
-    "Project Scenario: A foreign company, is looking to establish its presence into Singapore and Malaysia. As part of a team of data analysts and data scientists in, I've been tasked by the marketing department to focus on the platform: Reddit, to explore what are the main concerns and topics of the day of the two countries. And using NLP to train model to identify if a user is from Singapore or Malaysia via the post made.\n",
+    "Is it clear what the goal of the project is?\n",
     "\n",
-    "Some of the tools that I will be using are:\n",
-    "* Pushshift API for webscrapping\n",
-    "* Word Cloud and Lemma for exploratory data analysis\n",
-    "* Different types of ML models: Logistic Regression, Random Forest Classifier and a few different Naive Bayes classifers"
+    "What type of model will be developed?\n",
+    "\n",
+    "How will success be evaluated?\n",
+    "\n",
+    "Is the scope of the project appropriate?\n",
+    "\n",
+    "Is it clear who cares about this or why this is important to investigate?\n",
+    "\n",
+    "Does the student consider the audience and the primary and secondary stakeholders?\n",
+    "\n",
+    "Data Scientist for a company looking to expand into Singapore and Malaysia. Tasked by the marketing department to look at reddit to see what are the hot topics of the day for both countries and if the citizens of these two countries have enough similiarities so that the marketing department would only need to create a single strategy. Or if they're starkly different, what are the difference so that the company would be better able to target the each country's populance. for an e commerce company that wants to speak the lingo of msia and sg online forum users\n",
+    "\n",
+    "I'll be webscrapping, eda, knives, drecisiontree, logisticReg..."
    ]
   },
   {
