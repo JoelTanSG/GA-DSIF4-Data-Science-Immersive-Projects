@@ -8,6 +8,7 @@
 Project Scenario: A foreign company, is looking to establish its presence into Singapore and Malaysia. As part of a team of data analysts and data scientists in, I've been tasked by the marketing department to focus on the platform: Reddit, to explore what are the main concerns and topics of the day of the two countries. And using NLP to train model to identify if a user is from Singapore or Malaysia via the post made.
 ### Datasets used
 The data used are scrapped from the subreddits: [r/singapore](https://www.reddit.com/r/singapore/) and [r/malaysia](https://www.reddit.com/r/malaysia/)
+### Steps Taken
 I first started the project by webscrapping 1,500 post from the subreddits: Malaysia and Singapore. From there I did some basic cleaning, removing digits and special characters from the titles. Upon realising that 80% of the post did not have any content, I decided to drop the text in the content.
 
 Some interesting ideas were explored during the EDA.
