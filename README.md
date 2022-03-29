@@ -5,6 +5,8 @@ This repository contains all the projects done for General Assembly's [Data Scie
 1. [Project 1: SAT Test Analysis and Visualisation](./Project_1)
 2. [Project 2: Regression Modelling using Ames Housing Data](./Project_2)
 3. [Project 3: Web APIs & NLP (A Reddit Project)](./Project_3)
+4. :construction:[Project 4: Work in Progress](./Project_4):construction:
+5. :construction:[Capstone: Work in Progress](./Capstone):construction:
 
 **Author**: [JoelTanSG](https://github.com/JoelTanSG)
 <p>
