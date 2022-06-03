@@ -52,9 +52,9 @@ Using the library: LangID and then matching to the ISO language code table, I ma
 ### Part 2: Data Exploration
 Some sample exploration done. Please look at the code: Part2_EDA.ipynb for more.
 
-![](./images/Top 10 count of authors with the most books in this dataset.png)
+![](./images/Top_10_count_of_authors_with_the_most_books_in_this_dataset.png)
 
-![](./images/Top 10 rated books with at least 50,000 reviews excluding Harry Potter.png)
+![](./images/Top_10_rated_books_with_at_least_50,000_reviews_excluding_Harry_Potter.png)
 
 ![](./images/Top_10_languages_used_in_this_dataset_excluding_English.png)
 
