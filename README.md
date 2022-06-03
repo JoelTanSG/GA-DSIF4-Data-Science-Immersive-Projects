@@ -6,7 +6,7 @@ This repository contains all the projects done for General Assembly's [Data Scie
 2. [Project 2: Regression Modelling using Ames Housing Data](./Project_2)
 3. [Project 3: Web APIs & NLP (A Reddit Project)](./Project_3)
 4. [Project 4: West Nile Virus Prediction (A Kaggle Project)](./Project_4)
-5. :construction: [Capstone: Work in Progress](./Capstone) :construction:
+5. [Capstone: Book Recommender System](./Capstone)
 
 **Author**: [JoelTanSG](https://github.com/JoelTanSG)
 <p>
