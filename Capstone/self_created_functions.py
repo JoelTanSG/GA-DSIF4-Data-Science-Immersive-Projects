@@ -97,15 +97,6 @@ def wptools_scrape_save_tocsv(df,save_to):
         # Drop those by keeping only those with the key 'pages'
         missing_info = [item for item in missing_info if 'pages' in item]
 
-        '''#Keep only info that's needed
-        to_keep = ['name','language','pages','genre','publication date']
-        for info in missing_info:
-            for key in info.copy():
-                if key not in to_keep:
-                    del info[key]
-                else:
-                    pass'''
-
         # Clean up info scrapped from info box
         for index,info in enumerate(missing_info):
             try:
