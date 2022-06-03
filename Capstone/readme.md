@@ -1,75 +1,72 @@
-# Capstone Project
+# Book Recommender System
+A cold start problem. How do we recommend books without past user’s preference or information?
 
-Your Capstone project is the culmination of your time at GA. You will be tasked with developing an interesting question, collecting the data required to model that data, developing the strongest model (or models) for prediction, and communicating those findings to other data scientists and non-technical individuals. This introductory document lays out the five consitutent portions of the project and their due dates.
+### TOC
 
-Not sure where to start? Need some inspiration? Check out some past student capstone projects at the bottom of this README: [CLICK HERE](#example-projects)
+- Part 1: Data Data Collection
+- Part 2: Data Exploration
+- Part 3: Creating Recommendation System
 
-## Your Deliverables
+### Part 1: Data Collection
 
-- A well-made predictive model using either structured or unstructured machine learning techniques (or other technique approved in advanced by the global instructors), as well as clean, well-written code.
-- A technical report aimed at fellow data scientists that explains your process and findings
-- A public presentation of your findings aimed at laypeople.
+Step 1: Used the scrapy spider created by [havanagrawal](https://github.com/havanagrawal/GoodreadsScraper) to scrape Goodreads.
+Total Books scraped: 175,406 from 28 lists of books.
 
-### **[Capstone, Part 1: Topic Proposals](./part_01/)**
+|#|List Scrapped|
+|---|:---|
+|1|Best_Page_Turners_with_Redeeming_Social_Value|
+|2|Couldn_t_Put_The_Book_Down_|
+|3|Books_you_wish_more_people_knew_about_Part_II|
+|4|Best_Books_of_the_21st_Century|
+|5|Books_that_Blew_Me_Away_and_that_I_Still_Think_About_of_all_types_|
+|6|Best_Unknown_but_must_be_Known_books_|
+|7|1001_Books_You_Must_Read_Before_You_Die|
+|8|Books_That_Everyone_Should_Read_At_Least_Once|
+|9|Lesser_Known_Authors|
+|10|What_To_Read_Next|
+|11|The_Most_Influential_Books|
+|12|100_Books_to_Read_in_a_Lifetime_Readers_Picks|
+|13|Books_That_Should_Be_Made_Into_Movies|
+|14|Must_Read_Non_Fiction|
+|15|I_m_glad_someone_made_me_read_this_book|
+|16|Best_Books_Ever|
+|17|Books_With_a_Goodreads_Average_Rating_of_4_5_and_above_and_With_At_Least_100_Ratings|
+|18|Books_that_Changed_the_Way_You_View_Life|
+|19|100_Mysteries_and_Thrillers_to_Read_in_a_Lifetime_Readers_Picks|
+|20|Read_Them_Twice_At_Least|
+|21|Books_You_Wish_More_People_Knew_About|
+|22|Best_Young_Adult_Books|
+|23|Interesting_and_Readable_Nonfiction|
+|24|Best_Books_of_the_18th_Century|
+|25|Best_Books_of_the_Decade_2000s|
+|26|Best_for_Book_Clubs|
+|27|Best_Science_Fiction_Fantasy_Books|
+|28|Best_Books_of_the_Decade_1990s|
 
-In Part 1, get started by choosing **three potential topics and problems**, describing your goals & criteria for success, potential audience(s), and identifying 1-2 potential datasets. In the field of data science, good projects are practical. Your capstone project should be manageable and affect a real world audience. This might be a domain you are familiar with, a particular interest you have, something that affects a community you are involved in, or an area that relates to a field you wish to work in.
+Step 2: Scrapped Wikipedia
+To fill in the null values, I used wptools to scrape Wikipedia's info-boxes
 
-One of the best ways to test ideas quickly is to share them with others. A good data scientist has to be comfortable discussing ideas and presenting to audiences. That's why for Part 1 of your Capstone project, you'll be preparing a lightning talk in addition to your initial notebook outlining the scope of your project.  You will present your candidate topics in a slide deck, and should be prepared to answer questions and defend your data selection(s). Presentations should take no more than 3-5 minutes.
+Step 3: Identify book's written language by the title
+Using the library: LangID and then matching to the ISO language code table, I map out the null values for the language column
 
-**The ultimate choice of topic for your capstone project is yours!** However, this is research and development work. Sometimes projects that look easy can be difficult and vice versa. It never hurts to have a second (or third) option available.
+### Part 2: Data Exploration
+Some sample exploration done. Please look at the code: Part2_EDA.ipynb for more.
+![](../images/Top 10 count of authors with the most books in this dataset.png)
+![](../images/Top 10 rated books with at least 50,000 reviews excluding Harry Potter.png)
+![](../images/Top 10 languages used in this dataset excluding English.png)
+![](../images/Top 10 Genres count ngram=2.png)
+![](../images/wordcloud_genres.png)
 
-- **Goal**: Prepare a 3-5 minute lightning talk that covers three potential topics, including potential sources of data, goals, metrics and audience.
-- **Due**: See `course-info`
+### Part 3: Creating Recommender System
+Method 1: Using MinMaxScaler to normalise the features, I then fitted a Ball Tree Algorithm first with different features such as average rating, languages, number of reviews, and number of pages. Ran the model but the recommendations given did not seem too relevant. Subsequently, I used it on a single feature genre and that result in better recommendations.
 
-### **[Capstone, Part 2: Problem Statement + Data](./part_02/)**
+Method 2: Using SentenceTransformer on the Genres column, I then calculated the cosine similarity, generating a recommender system base on the closest cosine similarity. This result is very similar to method 1 when I use on the genres column.
 
-For Part 2, provide a clear statement of the problem that you have chosen and an overview of your approach to solving that problem. Summarize your objectives, goals & success metrics, and any risks & assumptions. Outline your proposed methods and models. **Your data should be in hand by this point in the process!**
+Finally to get the best of all three, I combine the recommendations into a single dataframe.
 
-**Again, your data should be in hand by this point the process!**
+### Conclusion
+I've created 3 recommender systems to recommend books in a cold start scenario using content base filtering. And then combining them together to get a unique list of books that is similar by way of distance calculated using cosine similarity and a ball tree classifier. It would seem that the best feature to use would be the genre column in this case.
 
-- **Goal**: Gather your data and describe your proposed approach to your local instructor.
-- **Due**: See `course-info`
+There is another way, using the multi-armed bandit method, where random books are recommended to the user to get the user feedback. And if the user rates a book positively, the recommender would then generate a new list of recommendations. However, due to time constraint, I shall not be exploring this method.
 
-### **[Capstone, Part 3: Progress Report + Preliminary Findings](./part_03/)**
-
-In Part 3, you'll create a progress report of your work in order to get feedback along the way. Describe your approach, initial EDA, initial results, and any setbacks or lessons learned so far. Your report should include updated visual and statistical analysis of your data. You’ll also meet with your local instructional team to get feedback on your results so far!
-
-- **Goal**: Discuss progress and setbacks, include visual and statistical analysis, review with instructor.
-- **Due**: See `course-info`
-
-### **[Capstone, Part 4: Report Writeup + Technical Analysis](./part_04/)**
-
-By now, you're ready to apply your modeling skills to make machine learning predictions. Your goal for Part 4 is to develop a technical document (in the form of Jupyter notebook) that can be shared among your peers.
-
-Document your research and analysis including a summary, an explanation of your modeling approach as well as the strengths and weaknesses of any variables in the process. You should provide insight into your analysis, using best practices like cross validation or applicable prediction metrics.
-
-- **Goal**: Detailed report and code with a summary of your statistical analysis, model, and evaluation metrics.
-- **Due**: See `course-info`
-
-### **[Capstone, Part 5: Presentation + Recommendations](./part_05/)**
-
-Whether during an interview or as part of a job, you will frequently have to present your findings to business partners and other interested parties - many of whom won't know anything about data science! That's why for Part 5, you'll create a presentation of your previous findings with a non-technical audience in mind.
-
-You should already have the analytical work complete, so now it's time to clean up and clarify your findings. Come up with a detailed slide deck or interactive demo that explains your data, visualizes your model, describes your approach, articulates strengths and weaknesses, and presents specific recommendations. Be prepared to explain and defend your model to an inquisitive audience!
-
-- **Goal**: Detailed presentation deck that relates your data, model, and findings to a non-technical audience.
-- **Due**: See `course-info`
-
-<a name="example-projects"></a>
-### Example Projects
-
-Below are some great capstone projects submitted by past DSI students!
-
-* [Kenya Chauche, DSI-10](https://github.com/KenyaChauche/sonnet-generation) built a natural language generation program trained on Shakespeare's sonnets
-* [Molly Baird, DSI-11](https://github.com/mollycbaird/ComputerVisionSET) wanted to computerize the game of SET, and succeeded admirably
-* [Daniel Johnston, DSI-2](https://github.com/djkjohnston/ML_from_scratch_GA_DSI_Capstone) built several key machine learning algos from scratch in python, comparing their performance to the scikit-learn implementations.  
-* [Alex Schultz, DSI-3](https://github.com/fullquartpress/DSI-Capstone) predicts spot coffee (commodity coffee bean) price changes from sentiment analysis of an industry trade publication.  
-* [Brice Walker, DSI-3](https://github.com/bricewalker/Hey-Jetson) wanted to play with his Jetson GPU and built voice transcription _from scratch_.  
-* [Caitlin Streamer, DSI-4](https://github.com/c-streams/Pneumonia) worked on a Kaggle dataset to predict pneumonia from chest X-rays.  
-* [Brian Osgood, DSI-04](https://github.com/osgoodbl/PyFilter) built a bot that crawls twitter and identifies whether an image tagged 'lamborghini' is actually a lamborghini.  
-* [Frank Turner, DSI-04](https://github.com/frankturnerv/Fashioning_Models_from_Fashion_Models) uses image recognition to identify the colors used in a fashion season's palette.  
-* [DSI-06, team](https://github.com/balak4/Optimizing-Evac-Routes) This is actually the DSI-6 group project. It's here because it's really, really impressive.  
-* [Amy Taylor, DSI-06](https://github.com/amytaylor330/CNN_for_Dance_Music_Classification_repost) wanted to quantify the difference between types of dance music.  
-* [Veronica Giannotta, DSI-06](https://github.com/vgiannotta/Emotional-Impacts-of-Viral-Content) delved into the dark side of the internet and evaluated the emotional sentiment of social media content that goes viral.
-* [Derek Steffan, DSI-07](https://github.com/dsteffan/twitch_chat_analysis) automates the process of creating twitch highlight reels using sentiment analysis, markov chains, and Bayesian analysis.  
-* [Sebastian Alvis, League of Legends](https://github.com/salvis2/SpringboardAlvis/tree/master/capstone_project_1) Not a GA capstone, but a very compelling case for applying data science to your interests to come up with a good capstone.
+One recurring issue I constantly face was the lack of memory/ram to run and test different models and ideas. This restricted my ability to run more test and visualise some graphs. One way to work around this would be to work in a cloud environment. But once again due to time constraint and financial reasons I did not take that step. But it would be a good way to further enhance the recommender system.
