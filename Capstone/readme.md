@@ -58,7 +58,7 @@ Some sample exploration done. Please look at the code: Part2_EDA.ipynb for more.
 
 ![](./images/Top 10 languages used in this dataset excluding English.png)
 
-![](./images/Top 10 Genres count ngram=2.png)
+![]("./images/Top 10 Genres count ngram=2.png")
 
 ![](./images/wordcloud_genres.png)
 
