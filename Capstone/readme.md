@@ -51,11 +51,16 @@ Using the library: LangID and then matching to the ISO language code table, I ma
 
 ### Part 2: Data Exploration
 Some sample exploration done. Please look at the code: Part2_EDA.ipynb for more.
-![](../images/Top 10 count of authors with the most books in this dataset.png)
-![](../images/Top 10 rated books with at least 50,000 reviews excluding Harry Potter.png)
-![](../images/Top 10 languages used in this dataset excluding English.png)
-![](../images/Top 10 Genres count ngram=2.png)
-![](../images/wordcloud_genres.png)
+
+![](./images/Top 10 count of authors with the most books in this dataset.png)
+
+![](./images/Top 10 rated books with at least 50,000 reviews excluding Harry Potter.png)
+
+![](./images/Top 10 languages used in this dataset excluding English.png)
+
+![](./images/Top 10 Genres count ngram=2.png)
+
+![](./images/wordcloud_genres.png)
 
 ### Part 3: Creating Recommender System
 Method 1: Using MinMaxScaler to normalise the features, I then fitted a Ball Tree Algorithm first with different features such as average rating, languages, number of reviews, and number of pages. Ran the model but the recommendations given did not seem too relevant. Subsequently, I used it on a single feature genre and that result in better recommendations.
